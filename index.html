@@ -7,6 +7,11 @@
     <title>Flower Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -16,35 +21,99 @@
             font-family: "Noto Serif", serif;
             font-optical-sizing: auto;
             font-style: normal;
-            font-variation-settings:"wdth" 100;
+            font-variation-settings: "wdth" 100;
+        }
+
+        .inter-normal {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
         }
     </style>
 </head>
 
 <body class="noto-serif-normal">
     <header>
-        <nav class="flex items-center justify-between mx-5 mt-6">
-            <img src="assets/logo.png" alt="" class="w-1/5">
-            <ul class="hidden">
-                <li class=""><a href="" class=""></a></li>
-                <li class=""><a href="" class="">Home</a></li>
-                <li class=""><a href="" class="">Shop</a></li>
-                <li class=""><a href="" class="">About us</a></li>
-                <li class=""><a href="" class=""></a></li>
-            </ul>
-            <h1 class="text-2xl mt-4"><i class="fa-solid fa-cart-shopping "></i> Cart($56)</h1>
-            
+        <nav class="flex items-center justify-between mx-5 mt-6 lg:items-center lg:mx-30 lg:mt-7 ">
+            <img src="assets/logo.png" alt="" class="w-1/5 lg:w-38">
+            <div class=" lg:flex gap-13 ">
+                <ul class="hidden lg:flex text-[20px] gap-13 ">
+                    <li class=""><a href="" class="font-medium">Home</a></li>
+                    <li class=""><a href="" class="text-gray-400">Shop</a></li>
+                    <li class=""><a href="" class="text-gray-400">About us</a></li>
+                </ul>
+                <h1 class="text-2xl mt-4 lg:mt-auto text-[20px]"><i class="fa-solid fa-cart-shopping "></i> Cart($56)
+                </h1>
+            </div>
+
         </nav>
-        <div class="">
-            <img src="assets/hero-flower.png" alt="" class="">
-            <div class="mx-8 mt-5 mb-10">
-                <h1 class="text-3xl font-bold">ALWAYS <span class="text-orange-600 ">FRESH FLOWERS</span></h1>
-                <p class="text-[16px] text-gray-600">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+        <div class="lg:flex flex-row-reverse lg:my-20 lg:mx-30 ">
+            <img src="assets/hero-flower.png" alt="" class="lg:h-85 mt-20 mr-10">
+            <div class="mx-8 mt-5 mb-10 lg:w-155 lg:mt-40 lg:mr-0">
+                <h1 class="text-3xl font-bold lg:text-6xl">ALWAYS <span class="text-orange-600 ">FRESH FLOWERS</span>
+                </h1>
+                <p class="text-[16px] text-gray-600 inter-normal">Indulge your senses with the beauty and fragrance of our fresh
+                    flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are
+                    perfect for any occasion. </p>
             </div>
         </div>
     </header>
     <main>
-
+        <section class="inter-normal mt-3">
+            <h1 class="text-3xl font-semibold noto-serif-normal text-center mb-5 lg:text-5xl lg:mb-6"><span class="text-orange-600">Our</span> Plants</h1>
+            <p class="text-[16px] text-center text-gray-600 inter-normal mx-7 lg:text-[18px] lg:mx-35 mb-9">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+             <div class="grid grid-cols-2 gap-x-5 gap-y-9 mx-3 my-7 lg:grid-cols-4 lg:mx-22"> <!--cards container -->
+                 <div class="text-center mb-2"> <!--card -->
+                    <img src="assets/sample-flower-image.png" alt="" class="">
+                    <h2 class="text-2xl mt-7 font-medium">Lily Blossom</h2>
+                    <h2 class="text-2xl font-bold mt-1 mb-2">20 USD</h2>
+                    <button class="bg-orange-600 w-full text-2xl font-bold text-gray-50 h-12">ADD TO CART</button>
+                </div>
+                 <div class="text-center mb-2"> <!--card -->
+                    <img src="assets/sample-flower-image.png" alt="" class="">
+                    <h2 class="text-2xl mt-7 font-medium">Lily Blossom</h2>
+                    <h2 class="text-2xl font-bold mt-1 mb-2">20 USD</h2>
+                    <button class="bg-orange-600 w-full text-2xl font-bold text-gray-50 h-12">ADD TO CART</button>
+                </div>
+                 <div class="text-center mb-2"> <!--card -->
+                    <img src="assets/sample-flower-image.png" alt="" class="">
+                    <h2 class="text-2xl mt-7 font-medium">Lily Blossom</h2>
+                    <h2 class="text-2xl font-bold mt-1 mb-2">20 USD</h2>
+                    <button class="bg-orange-600 w-full text-2xl font-bold text-gray-50 h-12">ADD TO CART</button>
+                </div>
+                 <div class="text-center mb-2"> <!--card -->
+                    <img src="assets/sample-flower-image.png" alt="" class="">
+                    <h2 class="text-2xl mt-7 font-medium">Lily Blossom</h2>
+                    <h2 class="text-2xl font-bold mt-1 mb-2">20 USD</h2>
+                    <button class="bg-orange-600 w-full text-2xl font-bold text-gray-50 h-12">ADD TO CART</button>
+                </div>
+                 <div class="text-center mb-2"> <!--card -->
+                    <img src="assets/sample-flower-image.png" alt="" class="">
+                    <h2 class="text-2xl mt-7 font-medium">Lily Blossom</h2>
+                    <h2 class="text-2xl font-bold mt-1 mb-2">20 USD</h2>
+                    <button class="bg-orange-600 w-full text-2xl font-bold text-gray-50 h-12">ADD TO CART</button>
+                </div>
+                 <div class="text-center mb-2"> <!--card -->
+                    <img src="assets/sample-flower-image.png" alt="" class="">
+                    <h2 class="text-2xl mt-7 font-medium">Lily Blossom</h2>
+                    <h2 class="text-2xl font-bold mt-1 mb-2">20 USD</h2>
+                    <button class="bg-orange-600 w-full text-2xl font-bold text-gray-50 h-12">ADD TO CART</button>
+                </div>
+                 <div class="text-center mb-2"> <!--card -->
+                    <img src="assets/sample-flower-image.png" alt="" class="">
+                    <h2 class="text-2xl mt-7 font-medium">Lily Blossom</h2>
+                    <h2 class="text-2xl font-bold mt-1 mb-2">20 USD</h2>
+                    <button class="bg-orange-600 w-full text-2xl font-bold text-gray-50 h-12">ADD TO CART</button>
+                </div>
+                 <div class="text-center mb-2"> <!--card -->
+                    <img src="assets/sample-flower-image.png" alt="" class="">
+                    <h2 class="text-2xl mt-7 font-medium">Lily Blossom</h2>
+                    <h2 class="text-2xl font-bold mt-1 mb-2">20 USD</h2>
+                    <button class="bg-orange-600 w-full text-2xl font-bold text-gray-50 h-12">ADD TO CART</button>
+                </div>
+            </div>
+            
+        </section>
     </main>
     <footer>
 
